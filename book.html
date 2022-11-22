@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Book a ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Form Övningar</h1>
+        <ul class="nav-items">
+            <li><a href="/index.html">Login Form</a></li>
+            <li><a href="/split.html">Split the bill</a></li>
+            <li><a href="/create.html">Create user</a></li>
+            <li><a href="/book.html">Book a ticket</a></li>
+        </ul>
+    </header>
+    <div class="wrapper book">
+        <form action="" class="form__book">
+            <h2>ÅKA TÅG</h2>
+            <article class="form__destinations">
+                <section>
+                    <h3>STOCKHOLM</h3>
+                    <p>10.30</p>
+                </section>
+                <section>
+                    <h3>GÖTEBORG</h3>
+                    <p>14.45</p>
+                </section>
+            </article>
+            <article class="form__class">
+                <section>
+                    <input type="radio" id="second">
+                    <label for="second">2:a klass</label>
+                </section>
+                <section>
+                    <input type="radio" id="first">
+                    <label for="first">1:a klass</label>
+                </section>
+            </article>
+            <article class="form__tickets">
+                <section>
+                    <label for="tickets">Antal biljetter</label>
+                    <select id="tickets">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="titel">Titel</label>
+                    <select id="titel">
+                        <option>Ms.</option>
+                        <option>Mr.</option>
+                    </select>
+                </section>
+            </article>
+            <section>
+                <label for="firstname">Förnamn</label>
+                <input type="text" id="firstname" value="Greta">
+            </section>
+            <section>
+                <label for="lastname">Efternamn</label>
+                <input type="text" id="lastname" value="Thunberg">
+            </section>
+            <section class="form__terms">
+                <input type="checkbox" name="" id="terms">
+                <label for="terms">Godkänner villkoren</label>
+            </section>
+            <button class="btn">Boka biljetter</button>
+        </form>
+    </div>
+</body>
+</html>

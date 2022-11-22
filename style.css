@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #eee;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 3em;
+}
+/* General */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+}
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.6);
+}
+li a:hover {
+    color: #5c29db;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+h2 {
+    margin-bottom: 1em;
+}
+button {
+    cursor: pointer;
+}
+.wrapper {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    max-width: 30rem;
+    max-height: 35rem;
+    text-align: center;
+}
+
+/* Login */
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.form__login input {
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+}
+/* Split the bill */ 
+
+.wrapper.split {
+    max-width: 25rem;
+    background-color: #fff;
+    border: 4px solid #443385;
+    border-radius: 8px;
+    box-shadow: -10px 15px 0px rgba(68, 52, 133, 0.2);
+}
+.form__split {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+.form__split section {
+    gap: 1em;
+}
+.form__split label {
+    color: #5c29db;
+    font-weight: 600;
+}
+.form__split input {
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form__split h2 {
+    margin-bottom: 0;
+}
+.form__split button {
+    background-color: #443385;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2em 3em;
+    border: none;
+    border-radius: 3px;
+    box-shadow: -5px 5px 0px rgba(68, 52, 133, 0.2);
+}
+
+/* Create user */
+
+.form__create {
+    max-width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+.create form > *:not(h2,button) {
+   padding: 0em 1em;
+   margin: 2em 0;
+}
+.form__create h2 {
+    background: #eee;
+    padding: 1em 0;
+    font-size: 1.3rem;
+}
+.form__create label {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.form__create input {
+    padding: .5em;
+}
+.form__create input#password {
+    letter-spacing: 2px;
+}
+.form__create button {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 89%;
+    padding: 1em 0;
+    margin: 0 0 5em 0;
+}
+
+/* Book a ticket */
+.form__book {
+    max-width: 60%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+.book form > *:not(h2,button,article:first-of-type) {
+   padding: 0em 1em;
+   margin: 2em 0;
+}
+.form__book h2 {
+    background: rgb(173, 173, 173);
+    padding: 1em 0;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.form__book p {
+    font-size: .5rem;
+    color:rgba(0, 0, 0, 0.4);
+}
+.form__book article:first-of-type section {
+    padding: 1em;
+}
+.form__book .form__destinations section:first-of-type {
+    background-color: rgb(221, 221, 221);
+}
+.form__book .form__destinations section:nth-of-type(2) {
+    background-color: #eee;
+}
+.form__book label {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.form__book input,
+.form__book select {
+    padding: .5em;
+}
+.form__book article {
+    display: flex;
+}
+.form__book article section {
+    width: 50%;
+}
+.form__book article.form__class section,
+.form__book .form__terms {
+    flex-direction: row;
+}
+.form__book .form__tickets section:first-of-type {
+    padding-right: 1em;
+}
+.form__book button {
+    width: 89%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 1em 0;
+    margin-bottom: 2em;
+    font-weight: 700;
+}
